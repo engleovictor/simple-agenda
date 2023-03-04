@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Agenda - Atualizar</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Atualizar Contato</h1>
+        <input type="text" class="updateValue">
+        <select class="selector">
+            <option value="name">Nome</option>
+            <option value="phoneNumber">Telefone</option>
+            <option value="email">Email</option>
+        </select>
+        <input class="searchButton" type="submit" value="Procurar">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome </th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody class="usersDataMenos">
+                <tr>
+                    <th><input type="text" class="nameInput"></th>
+                    <th><input type="text" class="emailInput"></th>
+                    <th><input type="text" class="phoneNumberInput"></th>
+                </tr>
+            </tbody>
+        </table>
+        <input class="updateButton" type="submit" value="Atualizar">
+    </form>
+    <br>
+    <p class="userConsole"></p>
+    <script src="/updatejs"></script>
+</body>
+</html>
